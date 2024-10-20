@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-4">
           <a href="/" className="text-gray-100 font-[RubikMonoOne] font-semibold hover:text-white">Home</a>
           <a href="/contact" className="text-gray-100 font-[RubikMonoOne] font-semibold hover:text-white">Contact</a>
-          <a href="/contact" className="text-gray-100 font-[RubikMonoOne] font-semibold hover:text-white">Register</a>
+          <a href="/contact" className="text-gray-100 font-[RubikMonoOne] font-semibold hover:text-white">Login</a>
         </div>
 
         <button
