@@ -5,10 +5,10 @@ import HeroMobileImg from "../assets/images/mobile_banner.PNG";
 const Hero = () => {
   return (
     <>
-      <div className="hidden md:block mb-5">
-        <img src={HeroImg} className=" w-full h-[100px] object-cover" alt="Hero" />
+      <div className="mb-5 h-[300px]">
+        <img src={HeroImg} className="w-full h-[100px] object-cover" alt="Hero" />
       </div>
-      <div className="block md:hidden mb-5">
+      <div className="hidden mb-5">
         <img
           src={HeroMobileImg}
           className="w-full h-[100px] object-cover"

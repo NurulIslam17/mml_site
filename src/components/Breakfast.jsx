@@ -1,6 +1,5 @@
 import React from "react";
 import breakfastImg from "../assets/images/breakfast _2.jpg";
-// import { FaBreadSlice } from "react-icons/fa6";
 
 const Breakfast = () => {
   return (
