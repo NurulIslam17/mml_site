@@ -4,7 +4,7 @@ import breakfastImg from "../assets/images/breakfast _2.jpg";
 const Breakfast = () => {
   return (
     <>
-      <div className="p-3 mt-10">
+      <div className="p-3 mb-5">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl text-center mb-10 font-bold text-[#b6391a]">What we offer...</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
