@@ -20,7 +20,7 @@ const Lunch = () => {
               <h2 className="text-2xl font[RubikMonoOne] font-bold text-[#eb2f06]">
                 Lunch
               </h2>
-              <p className="font[Ubuntu] text-justify text-2xl md:text-lg">
+              <p className="font[Ubuntu] text-justify text-xl md:text-lg">
                 Enjoy a flavorful lunch with our diverse menu, featuring fresh
                 salads, sandwiches, burgers, and hearty main courses. Whether
                 you're in the mood for something light or a filling meal, we’ve
@@ -35,7 +35,7 @@ const Lunch = () => {
                   </div>
                   <span>Sandwiches</span>
                 </div>
-                <div className="flex justify-left items-center mb-2 text-2xl md:text-lg">
+                <div className="flex justify-left items-center mb-2 text-xl md:text-lg">
                   <div className="h-3 w-3 me-3 bg-[#eb2f06] rounded-full">
                     {" "}
                   </div>

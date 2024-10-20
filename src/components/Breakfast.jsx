@@ -13,7 +13,7 @@ const Breakfast = () => {
               <h2 className="text-2xl font[RubikMonoOne] font-bold text-[#eb2f06]">
                 Breakfast
               </h2>
-              <p className="font[Ubuntu]  text-2xl text-justify md:text-lg">
+              <p className="font[Ubuntu]  text-xl text-justify md:text-lg">
                 Start your day with our delicious breakfast menu, featuring
                 fresh and flavorful options like pancakes, scrambled eggs,
                 smoothies, and fruit bowls and etc. Whether you prefer something light
@@ -21,7 +21,7 @@ const Breakfast = () => {
                 order online for a satisfying start to your day!
               </p>
 
-              <div className="mt-5 grid grid-cols-2 md:grid-cols-4 text-2xl md:text-lg">
+              <div className="mt-5 grid grid-cols-2 md:grid-cols-4 text-xl md:text-lg">
                 <div className="flex justify-left items-center mb-2">
                   <div className="h-3 w-3 me-3 bg-[#eb2f06] rounded-full"> </div>
                   <span>Egg</span>

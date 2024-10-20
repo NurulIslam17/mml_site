@@ -11,7 +11,7 @@ const Dinner = () => {
               <h2 className="text-2xl font[RubikMonoOne] font-bold text-[#eb2f06]">
                 Breakfast
               </h2>
-              <p className="font[Ubuntu] text-2xl text-justify md:text-lg">
+              <p className="font[Ubuntu] text-xl text-justify md:text-lg">
                 Indulge in a delightful dinner with our carefully curated menu,
                 offering a variety of options including juicy steaks, savory
                 pasta, fresh seafood, and more. Whether you’re craving a light
@@ -19,7 +19,7 @@ const Dinner = () => {
                 or order online for a memorable evening meal!
               </p>
 
-              <div className="mt-5 grid grid-cols-2 md:grid-cols-4 text-2xl md:text-lg">
+              <div className="mt-5 grid grid-cols-2 md:grid-cols-4 text-xl md:text-lg">
                 <div className="flex justify-left items-center mb-2">
                   <div className="h-3 w-3 me-3 bg-[#eb2f06] rounded-full">
                     {" "}
