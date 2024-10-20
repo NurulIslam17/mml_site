@@ -9,7 +9,7 @@ const Dinner = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div>
               <h2 className="text-2xl font[RubikMonoOne] font-bold text-[#eb2f06]">
-                Breakfast
+                Dinner
               </h2>
               <p className="font[Ubuntu] text-xl text-justify md:text-lg">
                 Indulge in a delightful dinner with our carefully curated menu,
@@ -19,42 +19,36 @@ const Dinner = () => {
                 or order online for a memorable evening meal!
               </p>
 
-              <div className="mt-5 grid grid-cols-2 md:grid-cols-4 text-xl md:text-lg">
+              <div className="mt-5 grid grid-cols-2 md:grid-cols-3 text-xl md:text-lg">
                 <div className="flex justify-left items-center mb-2">
                   <div className="h-3 w-3 me-3 bg-[#eb2f06] rounded-full">
                     {" "}
                   </div>
-                  <span>Egg</span>
+                  <span>Juicy Steaks</span>
                 </div>
                 <div className="flex justify-left items-center mb-2">
                   <div className="h-3 w-3 me-3 bg-[#eb2f06] rounded-full">
                     {" "}
                   </div>
-                  <span>Bread</span>
+                  <span>Savory Pasta</span>
                 </div>
                 <div className="flex justify-left items-center mb-2">
                   <div className="h-3 w-3 me-3 bg-[#eb2f06] rounded-full">
                     {" "}
                   </div>
-                  <span>Pancakes</span>
+                  <span>Fresh Seafood</span>
                 </div>
                 <div className="flex justify-left items-center mb-2">
                   <div className="h-3 w-3 me-3 bg-[#eb2f06] rounded-full">
                     {" "}
                   </div>
-                  <span>Smoothies</span>
+                  <span>Sweets</span>
                 </div>
                 <div className="flex justify-left items-center mb-2">
                   <div className="h-3 w-3 me-3 bg-[#eb2f06] rounded-full">
                     {" "}
                   </div>
                   <span>Fruit</span>
-                </div>
-                <div className="flex justify-left items-center mb-2">
-                  <div className="h-3 w-3 me-3 bg-[#eb2f06] rounded-full">
-                    {" "}
-                  </div>
-                  <span>Eggs</span>
                 </div>
               </div>
             </div>
