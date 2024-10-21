@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,12 +11,29 @@ const Navbar = () => {
   return (
     <nav className="bg-[#e55039] p-4">
       <div className="container max-w-5xl mx-auto flex justify-between items-center">
-        <div className="text-white text-3xl font-bold font-[RubikMonoOne]">.FD</div>
-        
+        <div className="text-white text-3xl font-bold font-[RubikMonoOne]">
+          .FD
+        </div>
+
         <div className="hidden md:flex space-x-4">
-          <a href="/" className="text-gray-100 font-[RubikMonoOne] font-semibold hover:text-white">Home</a>
-          <a href="/contact" className="text-gray-100 font-[RubikMonoOne] font-semibold hover:text-white">Contact</a>
-          <a href="/contact" className="text-gray-100 font-[RubikMonoOne] font-semibold hover:text-white">Login</a>
+          <Link
+            to={`/`}
+            className="text-gray-100 font-[RubikMonoOne] font-semibold hover:text-white"
+          >
+            Home
+          </Link>
+          <Link
+            to={`/`}
+            className="text-gray-100 font-[RubikMonoOne] font-semibold hover:text-white"
+          >
+            Contact
+          </Link>
+          <Link
+            to={`/login`}
+            className="text-gray-100 font-[RubikMonoOne] font-semibold hover:text-white"
+          >
+            Login
+          </Link>
         </div>
 
         <button
@@ -33,18 +51,35 @@ const Navbar = () => {
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
-              d={isOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16m-7 6h7'}
+              d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}
             />
           </svg>
         </button>
       </div>
 
       {/* Mobile Menu */}
-      <div className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}>
-        <a href="/" className="block text-gray-300 hover:bg-gray-700 px-4 py-2">Home</a>
-        <a href="/about" className="block text-gray-300 hover:bg-gray-700 px-4 py-2">About</a>
-        <a href="/services" className="block text-gray-300 hover:bg-gray-700 px-4 py-2">Services</a>
-        <a href="/contact" className="block text-gray-300 hover:bg-gray-700 px-4 py-2">Contact</a>
+      <div className={`md:hidden ${isOpen ? "block" : "hidden"}`}>
+        <a href="/" className="block text-gray-300 hover:bg-gray-700 px-4 py-2">
+          Home
+        </a>
+        <a
+          href="/about"
+          className="block text-gray-300 hover:bg-gray-700 px-4 py-2"
+        >
+          About
+        </a>
+        <a
+          href="/services"
+          className="block text-gray-300 hover:bg-gray-700 px-4 py-2"
+        >
+          Services
+        </a>
+        <a
+          href="/contact"
+          className="block text-gray-300 hover:bg-gray-700 px-4 py-2"
+        >
+          Contact
+        </a>
       </div>
     </nav>
   );
