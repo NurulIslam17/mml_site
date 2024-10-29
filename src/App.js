@@ -6,6 +6,7 @@ import Register from "./page/Register";
 import Dashboard from "./page/Admin/Dashboard";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollUpButton from "./components/ScrollUpButton";
+import User from "./page/Admin/User";
 
 function App() {
   return (
@@ -15,10 +16,12 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/dashboard" element={<Dashboard />}>
+            <Route path="users" element={<User />} />
+          </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
-          <ScrollUpButton/>
+        <ScrollUpButton />
       </BrowserRouter>
     </>
   );
