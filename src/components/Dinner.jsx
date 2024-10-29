@@ -11,7 +11,7 @@ const Dinner = () => {
               <h2 className="text-2xl font[RubikMonoOne] font-bold text-[#eb2f06]">
                 Dinner
               </h2>
-              <p className="font[Ubuntu] text-xl text-justify md:text-lg">
+              <p className="font-edu text-xl text-justify md:text-2xl">
                 Indulge in a delightful dinner with our carefully curated menu,
                 offering a variety of options including juicy steaks, savory
                 pasta, fresh seafood, and more. Whether you’re craving a light
@@ -19,36 +19,36 @@ const Dinner = () => {
                 or order online for a memorable evening meal!
               </p>
 
-              <div className="mt-5 grid grid-cols-2 md:grid-cols-3 text-xl md:text-lg">
+              <div className="mt-5 font-edu grid grid-cols-2 md:grid-cols-3 text-xl md:text-lg">
                 <div className="flex justify-left items-center mb-2">
                   <div className="h-3 w-3 me-3 bg-[#eb2f06] rounded-full">
                     {" "}
                   </div>
-                  <span>Juicy Steaks</span>
+                  <span className="text-xl">Juicy Steaks</span>
                 </div>
                 <div className="flex justify-left items-center mb-2">
                   <div className="h-3 w-3 me-3 bg-[#eb2f06] rounded-full">
                     {" "}
                   </div>
-                  <span>Savory Pasta</span>
+                  <span className="text-xl">Savory Pasta</span>
                 </div>
                 <div className="flex justify-left items-center mb-2">
                   <div className="h-3 w-3 me-3 bg-[#eb2f06] rounded-full">
                     {" "}
                   </div>
-                  <span>Fresh Seafood</span>
+                  <span className="text-xl">Fresh Seafood</span>
                 </div>
                 <div className="flex justify-left items-center mb-2">
                   <div className="h-3 w-3 me-3 bg-[#eb2f06] rounded-full">
                     {" "}
                   </div>
-                  <span>Sweets</span>
+                  <span className="text-xl">Sweets</span>
                 </div>
                 <div className="flex justify-left items-center mb-2">
                   <div className="h-3 w-3 me-3 bg-[#eb2f06] rounded-full">
                     {" "}
                   </div>
-                  <span>Fruit</span>
+                  <span className="text-xl">Fruit</span>
                 </div>
               </div>
             </div>
