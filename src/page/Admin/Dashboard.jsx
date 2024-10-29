@@ -12,10 +12,10 @@ const Dashboard = () => {
         </div>
 
         <div className="flex-1 ml-65">
-          <div className="fixed w-full bg-red-400 ml-64">
+          <div className="fixed w-full bg-red-400">
             <Navbar />
           </div>
-          <div className="pt-16 p-5 min-h-screen bg-green-500">
+          <div className="pl-[18rem] bg-[#d1ccc0] pt-20 px-12 min-h-screen">
             <Outlet />
           </div>
         </div>

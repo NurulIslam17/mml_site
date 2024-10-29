@@ -17,10 +17,10 @@ const Lunch = () => {
             </div>
 
             <div className="-order-1 md:order-1">
-              <h2 className="text-2xl font[RubikMonoOne] font-bold text-[#eb2f06]">
+              <h2 className="text-2xl font-edu font-bold text-[#eb2f06]">
                 Lunch
               </h2>
-              <p className="font[Ubuntu] text-justify text-xl md:text-lg">
+              <p className="font-edu text-justify text-xl md:text-2xl">
                 Enjoy a flavorful lunch with our diverse menu, featuring fresh
                 salads, sandwiches, burgers, and hearty main courses. Whether
                 you're in the mood for something light or a filling meal, we’ve
@@ -28,42 +28,42 @@ const Lunch = () => {
                 for a convenient and delicious lunch!
               </p>
 
-              <div className="mt-5 grid grid-cols-2 md:grid-cols-4 text-xl md:text-lg">
+              <div className="mt-5 font-edu grid grid-cols-2 md:grid-cols-4 text-xl md:text-lg">
                 <div className="flex justify-left items-center mb-2">
                   <div className="h-3 w-3 me-3 bg-[#eb2f06] rounded-full">
                     {" "}
                   </div>
-                  <span>Sandwiches</span>
+                  <span className="text-xl">Sandwiches</span>
                 </div>
                 <div className="flex justify-left items-center mb-2">
                   <div className="h-3 w-3 me-3 bg-[#eb2f06] rounded-full">
                     {" "}
                   </div>
-                  <span>Burgers</span>
+                  <span className="text-xl">Burgers</span>
                 </div>
                 <div className="flex justify-left items-center mb-2">
                   <div className="h-3 w-3 me-3 bg-[#eb2f06] rounded-full">
                     {" "}
                   </div>
-                  <span>Rice</span>
+                  <span className="text-xl">Rice</span>
                 </div>
                 <div className="flex justify-left items-center mb-2">
                   <div className="h-3 w-3 me-3 bg-[#eb2f06] rounded-full">
                     {" "}
                   </div>
-                  <span>Meat</span>
+                  <span className="text-xl">Meat</span>
                 </div>
                 <div className="flex justify-left items-center mb-2">
                   <div className="h-3 w-3 me-3 bg-[#eb2f06] rounded-full">
                     {" "}
                   </div>
-                  <span>Fish</span>
+                  <span className="text-xl">Fish</span>
                 </div>
                 <div className="flex justify-left items-center mb-2">
                   <div className="h-3 w-3 me-3 bg-[#eb2f06] rounded-full">
                     {" "}
                   </div>
-                  <span>Salads</span>
+                  <span className="text-xl">Salads</span>
                 </div>
               </div>
             </div>
