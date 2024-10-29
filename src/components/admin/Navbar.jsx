@@ -9,10 +9,10 @@ const Navbar = () => {
 
 
   return (
-    <div className="flex justify-between items-center bg-white shadow p-4">
-      <h2 className="text-lg text-[#b6391a] font-semibold">Dashboard</h2>
+    <div className="w-full flex justify-between items-center bg-gray-800 shadow p-4">
+      <h2 className="text-lg text-[#ffffff] font-semibold">Dashboard</h2>
       <div>
-        <button onClick={handleLogout} className="text-sm text-[#b6391a]">Logout</button>
+        <button onClick={handleLogout} className="text-sm text-[#ffffff]">Logout</button>
       </div>
     </div>  
   );
