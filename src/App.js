@@ -7,6 +7,7 @@ import Dashboard from "./page/Admin/Dashboard";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollUpButton from "./components/ScrollUpButton";
 import User from "./page/Admin/User";
+import Cost from "./page/Admin/Cost";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/dashboard" element={<Dashboard />}>
             <Route path="users" element={<User />} />
+            <Route path="cost" element={<Cost />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>

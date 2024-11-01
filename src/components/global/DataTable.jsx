@@ -1,6 +1,6 @@
 import React from "react";
 
-const DataTable = () => {
+const DataTable = ({ element }) => {
   return (
     <>
       <div className="my-3 px-5 p-5 rounded-md bg-[#f5f6fa]  shadow-sm">
@@ -33,34 +33,16 @@ const DataTable = () => {
             <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
               <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                 <tr>
-                  <th scope="col" className="px-6 py-3">
-                    Product name
-                  </th>
-                  <th scope="col" className="px-6 py-3">
-                    Color
-                  </th>
-                  <th scope="col" className="px-6 py-3">
-                    Category
-                  </th>
-                  <th scope="col" className="px-6 py-3">
-                    Accessories
-                  </th>
-                  <th scope="col" className="px-6 py-3">
-                    Available
-                  </th>
-                  <th scope="col" className="px-6 py-3">
-                    Price
-                  </th>
-                  <th scope="col" className="px-6 py-3">
-                    Weight
-                  </th>
-                  <th scope="col" className="px-6 py-3">
-                    Action
-                  </th>
+                  {element &&
+                    Object.keys(element).map((key, index) => (
+                      <th scope="col" className="px-6 py-3" key={index}>
+                        {key}
+                      </th>
+                    ))}
                 </tr>
               </thead>
               <tbody>
-                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                {/* <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                   <th
                     scope="row"
                     class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -87,7 +69,7 @@ const DataTable = () => {
                       Remove
                     </a>
                   </td>
-                </tr>
+                </tr> */}
               </tbody>
             </table>
           </div>
