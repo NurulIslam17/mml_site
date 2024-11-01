@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiHome, FiUser, FiSettings } from 'react-icons/fi';
+import { FiHome, FiUser, FiSettings, FiDollarSign } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
@@ -14,6 +14,10 @@ const Sidebar = () => {
         <Link to={'users'} className="flex items-center mb-4">
           <FiUser className="mr-3" />
           <span>Users</span>
+        </Link>
+        <Link to={'cost'} className="flex items-center mb-4">
+          <FiDollarSign className="mr-3" />
+          <span>Cost</span>
         </Link>
         <Link className="flex items-center mb-4">
           <FiSettings className="mr-3" />

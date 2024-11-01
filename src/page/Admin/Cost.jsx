@@ -1,22 +1,24 @@
+import React from "react";
 import Header from "../../components/global/Header";
 import DataTable from "../../components/global/DataTable";
 
-const User = () => {
+const Cost = () => {
   const tableEelement = {
-    Name: "name",
-    Email: "email",
-    Phone: "phone",
-    From: "from",
-    To: "to",
+    By: "name",
+    Amount: "amount",
+    Cash: "cash",
+    Return: "return",
+    On: "to",
     Status: "status",
     Action: "Action",
   };
+
   return (
     <>
-      <Header title="User List" action="Create" customClass="create-user" />
+      <Header title="Cost List" action="Create" customClass="create-cost" />
       <DataTable element={tableEelement} />
     </>
   );
 };
 
-export default User;
+export default Cost;
