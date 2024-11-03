@@ -23,7 +23,7 @@ const Create = () => {
             htmlFor="name"
             className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
           >
-           By
+           By 1
           </label>
           <input
             type="text"

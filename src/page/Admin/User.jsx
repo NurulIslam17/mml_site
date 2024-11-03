@@ -1,5 +1,6 @@
-import Header from "../../components/global/Header";
 import DataTable from "../../components/global/DataTable";
+import Modal from "../../components/global/Modal";
+import Create from "../../components/admin/user/Create";
 
 const User = () => {
   const tableEelement = {
@@ -13,7 +14,7 @@ const User = () => {
   };
   return (
     <>
-      <Header title="User List" action="Create" customClass="create-user" />
+      <Modal title="User List" modalTitle="Add User" action="Create" modalBody={<Create/>} customClass="create-user"/>
       <DataTable element={tableEelement} />
     </>
   );
