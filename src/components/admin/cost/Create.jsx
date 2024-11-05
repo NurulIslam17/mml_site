@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import { BiPlusCircle, BiTrash } from "react-icons/bi";
 
 const Create = () => {
   const {
@@ -9,6 +10,7 @@ const Create = () => {
   } = useForm();
 
   const [items, setItems] = useState([{ items: "", price: 0 }]);
+  const [total,setTotal] = useState(0);
 
   const addItem = () => {
     setItems([...items, { items: "", price: 0 }]);
@@ -19,10 +21,10 @@ const Create = () => {
     setItems(updatedItems);
   };
 
-  // const handleSubmit = (data) =>{
-  //   console.log(data);
+  const removeItem = (index) => {
+    setItems(items.filter((_, i) => i !== index));
+};
 
-  // }
 
   return (
     <>
@@ -62,12 +64,22 @@ const Create = () => {
 
         <p>Items</p>
 
-        <div>
+        <div className="relative">
           {items.map((item, index) => (
-            <div className="grid grid-cols-2 gap-2 mb-4" key={index}>
+            <div className="grid grid-cols-2 gap-2 mb-4 relative" key={index}>
+              <button
+                type="button"
+                onClick={() => removeItem(index)}
+                className={`bg-red-400 text-black p-1 rounded-full absolute -top-1 -right-3 ${
+                  index === 0 ? "hidden" : "block"
+                }`}
+              >
+                <BiTrash />
+              </button>
+
               <input
                 type="text"
-                placeholder={`Item name ${index+1}`}
+                placeholder={`Item name ${index + 1}`}
                 value={item.items}
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 onChange={(e) =>
@@ -88,7 +100,15 @@ const Create = () => {
               />
             </div>
           ))}
-          <button onClick={addItem}>Add Item</button>
+          <button
+            type="button"
+            onClick={addItem}
+            className="p-2 bg-green-400 font-bold rounded-xl"
+          >
+            <BiPlusCircle />
+          </button>
+
+          <p className="bottom-0 right-0">Total : {total}</p>
         </div>
       </form>
     </>
